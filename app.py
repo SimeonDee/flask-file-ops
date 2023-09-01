@@ -1,9 +1,13 @@
 from flask import Flask, request, render_template, flash, redirect, url_for, send_file
-from os import listdir, path, remove
+from os import listdir, path, remove, mkdir
 from io import BytesIO
 # from werkzeug import secure_filename
 
 app = Flask(__name__)
+
+if not path.exists('uploads'):
+    mkdir('uploads')
+
 app.config['UPLOAD_FOLDER'] = 'uploads'
 app.secret_key = 'random key here'
 
