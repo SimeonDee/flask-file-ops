@@ -4,13 +4,9 @@ A flask code used to demonstrate how to perform file upload, download, deletion 
 
 ## **Tools:**
 
----
-
 `Flask, Jinja2, Bootstrap, CSS, HTML`
 
 ## **Operations:**
-
----
 
 - Directory management and listing
 - File upload
